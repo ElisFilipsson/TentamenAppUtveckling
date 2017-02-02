@@ -23,8 +23,10 @@ export class TabsPage {
   constructor(public nav: NavController, private app: App ) {
     //console.log(this.app.getRootNav().getActiveChildNav());
   }
-  /**goHome():void {
-    this.app.getRootNav().pop()
+  /**
+  goHome():void {
+    //this.app.getRootNav().pop();
+    this.nav.popToRoot();
   }
   selectTab(index: number) {
       var t: Tabs = this.nav.parent;

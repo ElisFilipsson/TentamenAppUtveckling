@@ -15,8 +15,6 @@ export class HomePage {
     const user = localStorage.getItem('user');
     if (user !== 'undefined') {
       this.username['title'] = user;
-    } else {
-      this.app.getRootNav().pop();
     }
   }
   enteredName() {
