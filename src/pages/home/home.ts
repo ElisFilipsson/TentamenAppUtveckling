@@ -11,7 +11,7 @@ import { TabsPage } from '../tabs/tabs';
 export class HomePage {
   username = {}
 
-  constructor(public nav: NavController, public navParams: NavParams, private app: App ) {
+  constructor(public nav: NavController, public navParams: NavParams, private app: App) {
     const user = localStorage.getItem('user');
     if (user !== 'undefined') {
       this.username['title'] = user;
@@ -20,6 +20,7 @@ export class HomePage {
   enteredName() {
     const title = this.username['title'];
     localStorage.setItem('user', title);
-    this.nav.push(TabsPage);
+    //this.nav.push(TabsPage);
+    this.nav.setRoot(TabsPage, {tabIndex: 1});
   }
 }

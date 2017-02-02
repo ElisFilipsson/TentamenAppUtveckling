@@ -21,7 +21,7 @@ export class ReposPage {
     localStorage.setItem('rep', 'true');
     githubUsers.listRepositories(this.title).subscribe(repos => {
       this.reposit = repos;
-      console.log(this.reposit);
+      //console.log(this.reposit);
     })
   }
   goBack():void {

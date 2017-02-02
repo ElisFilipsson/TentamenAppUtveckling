@@ -28,7 +28,7 @@ export class RepoDetailsPage {
     }
     githubUsers.getRepo(this.name, temp).subscribe(repo => {
       this.repo = repo;
-      console.log(repo);
+      //console.log(repo);
     })
   }
   goBack():void {

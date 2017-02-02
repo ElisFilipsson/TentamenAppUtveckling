@@ -25,7 +25,7 @@ export class MyGitPage {
   map: any;
 
   constructor(public nav: NavController, public navParams: NavParams, private githubUsers: GithubUsers, private app: App ) {
-    console.log(this.app.getRootNav().getActiveChildNav());
+    //console.log(this.app.getRootNav().getActiveChildNav());
     /** 
     this.title = localStorage.getItem('user');
     
@@ -65,7 +65,7 @@ export class MyGitPage {
       }
       this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
     }, (err) => {
-      console.log(err);
+      //console.log(err);
     });
   }
 
@@ -79,7 +79,7 @@ export class MyGitPage {
       animation: google.maps.Animation.DROP,
       position: this.map.getCenter()
     });
-    console.log(marker.position);
+    //console.log(marker.position);
     let content = "<h4>You are here!</h4>";          
     this.addInfoWindow(marker, content);
   }

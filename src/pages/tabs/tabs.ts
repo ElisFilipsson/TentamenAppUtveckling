@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { App, NavController, Tabs } from 'ionic-angular';
+import { App, NavController, Tabs, NavParams } from 'ionic-angular';
+import { Observable } from 'rxjs/Observable';
 
 // Pages for tabs
 import { HomePage } from '../home/home';
@@ -19,10 +20,24 @@ export class TabsPage {
   tab2Root: any = ReposPage;
   tab3Root: any = AllReposPage;
   tab4Root: any = MyGitPage;
+  public tabIndex:Number = 1;
 
-  constructor(public nav: NavController, private app: App ) {
+  constructor(public nav: NavController, private app: App, public params:NavParams ) {
     //console.log(this.app.getRootNav().getActiveChildNav());
+    let tabIndex = this.params.get('tabIndex');
+    if(tabIndex) {
+      this.tabIndex = tabIndex;
+    }
+    if(this.tabIndex == 0){
+      //this.tabIndex = tabIndex;
+      this.nav.setRoot(null, {tabIndex: 1});
+
+    }
   }
+  /**tabSelected(tab: Tab) {
+    console.log(this.nav.parent);
+    console.log(tab.index);
+}*/
   /**
   goHome():void {
     //this.app.getRootNav().pop();
@@ -32,5 +47,6 @@ export class TabsPage {
       var t: Tabs = this.nav.parent;
       t.select(index);
   }*/
+  
   
 }
