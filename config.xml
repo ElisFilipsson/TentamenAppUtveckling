@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionicframework.githubionic913224" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>GithubApp</name>
-    <description>An app for fetching your github user and looking for repositories.</description>
+<widget id="com.ionicframework.githubionic913899" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>TentamenAppUtveckling</name>
+    <description>An app for listing repositories from git - Exam on 20170202.</description>
     <author email="info@sandrafilipsson.se" href="http://www.sandrafilipsson.se">Sandra Filipsson</author>
     <content src="index.html" />
     <access origin="*" />
