@@ -1,0 +1,42 @@
+page-home {
+    background: #f0f0f0;
+    .container {
+        padding-top: 30%;
+        background-color: #f0f0f0;
+        height: 100%;
+        width: 100%;
+        color: $dark;
+
+        .item {
+            width: 90%;
+            margin: 5%;
+        }
+        .enter {
+            color: $dark;
+            background-color: $medium;
+            width: 90%;
+            margin: 2%;
+            padding: 2px;
+        }
+        .fb {
+            color: $light;
+            background-color: $grey;
+        }
+        h4, p {
+            text-align: center; 
+        }
+        .img-login {
+            width: 100px;
+            height: 100px;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+
+        
+    }
+    
+    
+    
+}

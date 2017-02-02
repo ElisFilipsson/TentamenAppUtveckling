@@ -1,0 +1,25 @@
+<ion-content>
+<div class="container">
+      <div class="center">
+        <img class="img-login" src="./assets/icon.png"/>
+      </div>
+      <h4>LOGIN TO YOUR ACCOUNT</h4>
+
+      <ion-item class="item">
+        <ion-input type="text" [(ngModel)]="username.title" name="title" placeholder="youemail@email.com"></ion-input>
+      </ion-item>
+      <ion-item class="item">
+        <ion-input type="password" [(ngModel)]="username.password" name="password" placeholder="password"></ion-input>
+      </ion-item>
+
+      <p>Forgot password?</p>
+      <div class="center">
+        <button ion-button medium color="secondary" class="enter" (click)="enteredName()">LOGIN</button>
+      </div>
+      <div class="center">
+        <button ion-button medium color="secondary" class="enter fb" (click)="enteredName()">Login with Facebook</button>
+      </div>
+      <p>Create Account</p>
+
+</div>
+</ion-content>

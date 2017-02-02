@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-uppercase>{{repo?.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header class="header">
+      Detail
+    </ion-list-header>
+    <ion-item text-wrap>
+      <p class="small">{{repo?.created_at}}</p>
+      <h2 text-uppercase>{{repo?.name}}</h2>
+      <p>{{repo?.description}}</p>
+      <p padding-top>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra magna quis scelerisque iaculis. Nam volutpat tempor imperdiet. </p>
+      <p padding-top>Fusce egestas, lorem vel dictum rhoncus, tortor mauris molestie nibh, eget posuere est eros sed lacus. Sed suscipit, orci eget mattis rhoncus, nibh est facilisis dui, et placerat felis odio id orci.</p>
+    </ion-item>
+    <ion-avatar padding>
+      <img [src]="repo?.owner.avatar_url">
+    </ion-avatar>
+    
+  </ion-list>
+ 
+</ion-content>

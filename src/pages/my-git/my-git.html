@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar align-title="center">
+    <ion-title>Map</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+    </ion-buttons>  
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!--<ion-list>
+    <ion-item>
+      <h2>{{ username.login }}</h2>
+      <p>Your cordinates are:</p>
+      <p>Latitude:{{lat}}</p>
+      <p>Longitude:{{lon}}</p>
+    </ion-item> 
+    </ion-list>-->
+
+    <div #map id="map"></div>  
+
+  
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      List
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list>
+  <button ion-item *ngFor="let rep of reposit" (click)="goToDetails(rep.name)">
+    <ion-avatar item-left>
+      <img [src]="rep.owner.avatar_url">
+    </ion-avatar>
+    <h2>{{rep.name}}</h2>
+    <h4>
+      {{rep.name}}
+      <ion-icon name="md-star"></ion-icon>
+      <ion-icon name="md-star"></ion-icon>
+      <ion-icon name="md-star"></ion-icon>
+      <ion-icon name="md-star-half"></ion-icon>
+      <ion-icon name="md-star-outline"></ion-icon>
+    </h4>
+    
+    <!--button will display right icon by default
+    <ion-icon item-right name="arrow-forward"></ion-icon>-->
+  </button>
+</ion-list>
+</ion-content>
